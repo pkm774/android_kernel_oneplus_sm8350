@@ -976,6 +976,7 @@ static ssize_t driver_override_store(struct device *dev,
 	int ret;
 
 	ret = driver_set_override(dev, (const char **)&pdev->driver_override, buf, count);
+
 	if (ret)
 		return ret;
 
